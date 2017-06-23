@@ -37,7 +37,9 @@ router.post('/wiki',function (req,res,next) {
     });
 
     page.save()
-    .then(res.redirect('/'));
+    .then(function (postData) {
+        res.json(postData);
+    });
 
 });
 router.get('/wiki/add',function (req,res,next) {
