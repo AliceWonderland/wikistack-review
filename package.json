@@ -1,0 +1,29 @@
+{
+  "name": "wikistack",
+  "version": "1.0.0",
+  "description": "wikistack",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AliceWonderland/wikistack-review.git"
+  },
+  "author": "Alice",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AliceWonderland/wikistack-review/issues"
+  },
+  "homepage": "https://github.com/AliceWonderland/wikistack-review#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "nunjucks": "^3.0.1",
+    "pg": "^6.4.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.30.4",
+    "volleyball": "^1.4.1"
+  }
+}
