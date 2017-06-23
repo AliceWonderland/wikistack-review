@@ -1,9 +1,12 @@
 {% extends "layout.html" %}
 
 {% block content %}
-  <h3>Pages</h3>
+  <h3>BLAHBLAHBLHA</h3>
   <hr>
+<h4>tew</h4>
   <ul class="list-unstyled">
-    <!-- PLACEHOLDER LIST OF PAGES -->
+      {% for post in page %}
+      <li><a href="/wiki/{{post.urlTitle}}">{{post.title}}</a></li>
+      {% endfor %}
   </ul>
 {% endblock %}
