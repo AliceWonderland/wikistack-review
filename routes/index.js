@@ -9,8 +9,7 @@ const User=models.User;
 
 // dir root
 router.get('/',function (req,res,next) {
-    res.render('/wiki')
-
+    res.redirect('/wiki')
 });
 
 // urlpath root
