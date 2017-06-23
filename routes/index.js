@@ -32,7 +32,8 @@ router.post('/wiki',function (req,res,next) {
     var page=Page.build({
         title:req.body.title,
         urlTitle:'mystring',
-        content:req.body.pageContent
+        content:req.body.pageContent,
+        status:'open'
     });
 
     page.save()

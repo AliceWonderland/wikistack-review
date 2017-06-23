@@ -21,7 +21,7 @@ var Page=db.define('page',
     },
     {
         hooks: {
-            beforeValidate: function (user, options) {
+            beforeValidate: function (page, options) {
                 page.urlTitle = generateUrlTitle(page.title);
 
                 function generateUrlTitle(title) {
@@ -35,8 +35,8 @@ var Page=db.define('page',
                     }
                 }
             },
-            afterValidate: function (user, options) {
-                page.something = 'whatever';
+            afterValidate: function (page, options) {
+                // page.something = 'whatever';
             }
         }
     }
