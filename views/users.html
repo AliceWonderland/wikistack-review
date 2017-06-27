@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<ul>
+    {% for user in users %}
+    <li><a href="/wiki/users/{{user.id}">{{user.name}}</a></li>
+    {% endfor %}
+</ul>
+
+<!--{% for post in page %}-->
+<!--<li><a href="/wiki/{{post.urlTitle}}">{{post.title}}</a></li>-->
+<!--{% endfor %}-->
+
+
+<!--<h3>{{page.title}} <small> (<a href="/wiki/{{page.urlTitle}}">Similar</a>)</small></h3>-->
+<!--<h4>by <a href="/wiki/users/{{page.author.id}}">{{page.author.name}}</a></h4>-->
+<!--<div>PLACEHOLDER TAG LIST</div>-->
+<!--<hr/>-->
+<!--<div>{{page.author.name}}</div>-->
+<!--<div class="page-body">{{page.content}}</div>-->
+<!--<hr/>-->
+<!--<a href="/wiki/{{page.urlTitle}}" class="btn btn-primary">edit this page</a>-->
+<!--<a href="/wiki/{{page.urlTitle}}" class="btn btn-danger">delete this page</a>-->
+<!--{% endblock %}-->

@@ -37,9 +37,9 @@ app.use(function (err,req,res,next) {
 
 // start server w db sync
 
-db.User.sync() //must use this notation if passing an obj of module.exports
+db.User.sync({force: true}) //must use this notation if passing an obj of module.exports
 .then(function () {
-    return db.Page.sync();
+    return db.Page.sync({force: true});
 })
 .then(function(){
     app.listen('3000',function(req,res,next){

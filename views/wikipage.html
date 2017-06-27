@@ -2,14 +2,14 @@
 
 {% block content %}
 
-
   <h3>{{page.title}} <small> (<a href="/wiki/{{page.urlTitle}}">Similar</a>)</small></h3>
-  <h4>by <a href="/wiki/{{page.authorName}}">{{page.authorName}}</a></h4>
+  <h4>by <a href="/wiki/users/{{page.author.id}}">{{page.author.name}}</a></h4>
   <div>PLACEHOLDER TAG LIST</div>
   <hr/>
-  <div>{{page.authorName}}</div>
+  <div>{{page.author.name}}</div>
   <div class="page-body">{{page.content}}</div>
   <hr/>
   <a href="/wiki/{{page.urlTitle}}" class="btn btn-primary">edit this page</a>
   <a href="/wiki/{{page.urlTitle}}" class="btn btn-danger">delete this page</a>
+
 {% endblock %}
